@@ -1,3 +1,32 @@
 <!--pages/index/index.wxml-->
-<t-button theme="primary">按钮</t-button>
-<t-tag>标签</t-tag>
+<view class="love_info">
+  <a href="#">
+    <view>
+      <image src="../../assets/images/avatar1.webp" mode="aspectFit" style="width: 100rpx;height: 100rpx;border-radius: 50%;" />
+    </view>
+    <text>喜洋洋</text>
+  </a>
+  <a href="#">
+    <view>
+      <image src="../../assets/images/avatar2.webp" mode="aspectFit" style="width: 100rpx;height: 100rpx;border-radius: 50%;"/>
+    </view>
+    <text>美羊羊</text>
+  </a>
+</view>
+<view class="love_num">
+  <a href="">
+  <text>已经相恋</text>
+  <text>2年20个月 </text>
+  <text>200天</text>
+  </a>
+</view>
+<view class="space">
+  <a href="#">
+    <text>未来规划</text>
+  </a>
+  <a href="#">记录此刻</a>
+</view>
+<view class="space">
+  <a href="#">专属相册</a>
+  <a href="#">给她留言</a>
+</view>

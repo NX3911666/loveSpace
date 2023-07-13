@@ -7,11 +7,6 @@
   "subpackages": [
   ],
   "usingComponents": {
-    "t-demo": "./components/demo-block/index",
-    "t-button": "tdesign-miniprogram/button/button",
-    "t-icon": "tdesign-miniprogram/icon/icon",
-    "t-tag": "tdesign-miniprogram/tag/tag",
-    "t-check-tag": "tdesign-miniprogram/check-tag/check-tag"
   },
   "window": {
     "backgroundTextStyle": "light",

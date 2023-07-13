@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@tencentcloud/chat-uikit-wechat": "^1.1.3"
+  }
+}
