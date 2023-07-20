@@ -1,0 +1,7 @@
+<!--components/card-box/card-box.wxml-->
+<view class="box_style">
+  <slot name="title"></slot>
+  <view>
+    <slot name="content"></slot>
+  </view>
+</view>

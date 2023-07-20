@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/news/news",
     "pages/photo/photo"
   ],
   "subpackages": [
@@ -22,7 +21,7 @@
       "iconPath": "/assets/tabbar/HOME.png",
       "selectedIconPath": "/assets/active_tabbar/HOME .png"
     },{
-      "pagePath": "pages/news/news",
+      "pagePath": "pages/photo/photo",
       "text": "消息",
       "iconPath": "/assets/tabbar/message.png",
       "selectedIconPath": "/assets/active_tabbar/message.png"

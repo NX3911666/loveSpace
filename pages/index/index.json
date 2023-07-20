@@ -1,5 +1,9 @@
 {
   "usingComponents": {
+    "card-box":"../../components/card-box/card-box"
   },
-  "navigationBarTitleText": "首页"
+  "navigationBarTitleText": "首页",
+  "options":{
+    "addGlobalClass": true
+  }
 }

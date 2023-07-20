@@ -1,32 +1,53 @@
 <!--pages/index/index.wxml-->
-<view class="love_info">
-  <a href="#">
-    <view>
-      <image src="../../assets/images/avatar1.webp" mode="aspectFit" style="width: 100rpx;height: 100rpx;border-radius: 50%;" />
+<card-box>
+  <view class="love_info" slot="content">
+    <card-box wx:for="{{userlist}}" wx:key="index">
+      <view slot="title">
+        <image src="{{item.userImage}}" mode="aspectFit" style="width: 100rpx;height: 100rpx;border-radius: 50%;" />
+      </view>
+      <text slot="content">{{item.username}}</text>
+    </card-box>
+    <!-- <card-box>
+      <view slot="title">
+        <image src="../../assets/images/avatar2.webp" mode="aspectFit" style="width: 100rpx;height: 100rpx;border-radius: 50%;" />
+      </view>
+      <text slot="content">美羊羊</text>
+    </card-box> -->
+  </view>
+</card-box>
+<card-box>
+  <view slot="title">你们已经认识 <text>22年10月10天5分21秒</text>
+  </view>
+</card-box>
+<!-- 留言与计划 -->
+<view class="love_plan">
+  <!-- 留言 -->
+  <card-box class="leavePlan">
+    <text slot="title" class="modetitle" data-name="数据" bindtap="clickleave">留言</text>
+    <view slot="content">
+      <ul>
+        <li wx:for="{{leaves.leave}}" wx:key="index" class="Plan_item">{{item.leavecontent}}-{{item.leaveTime}}</li>
+      </ul>
     </view>
-    <text>喜洋洋</text>
-  </a>
-  <a href="#">
-    <view>
-      <image src="../../assets/images/avatar2.webp" mode="aspectFit" style="width: 100rpx;height: 100rpx;border-radius: 50%;"/>
+  </card-box>
+  <!-- 计划 -->
+  <card-box class="leavePlan">
+    <text slot="title" class="modetitle">计划</text>
+    <view slot="content">
+      <ul>
+        <li wx:for="{{plans.plan}}" wx:key="index" class="leave_item">{{item.plancontent}}-{{item.planendTime}}</li>
+      </ul>
     </view>
-    <text>美羊羊</text>
-  </a>
+  </card-box>
 </view>
-<view class="love_num">
-  <a href="">
-  <text>已经相恋</text>
-  <text>2年20个月 </text>
-  <text>200天</text>
-  </a>
-</view>
-<view class="space">
-  <a href="#">
-    <text>未来规划</text>
-  </a>
-  <a href="#">记录此刻</a>
-</view>
-<view class="space">
-  <a href="#">专属相册</a>
-  <a href="#">给她留言</a>
-</view>
+<!-- 情侣相册 -->
+<card-box>
+  <text slot="title" class="modetitle">情侣相册</text>
+  <view slot="content" class="photo">
+    <ul>
+      <li wx:for="{{photoList}}" wx:key="index">
+        <image src="{{item}}" mode="scaleToFill" class="photolist" />
+      </li>
+    </ul>
+  </view>
+</card-box>
